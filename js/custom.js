@@ -1,30 +1,3 @@
-/* ----------------------------------------------------------------
-
-[ Custom settings ]
-
-00. Preloader
-01. Menu Navigation
-02. Smooth Scrolling
-03. Background Image
-04. Services owlCarousel
-05. Portfolio owlCarousel
-06. Portfolio Page owlCarousel
-07. Clients owlCarousel
-08. Testimonials owlCarousel
-09. MagnificPopup
-10. YouTubePopUp
-11. Parallaxie
-12. Progress Skills
-13. Tooltip
-14. Wow Animated
-15. Splitting Text
-16. Accordion Box
-17. Reveal Effect
-18. Mouse Cursor
-19. Contact Form
-
-------------------------------------------------------------------- */
-
 (function () {
     'use strict';
     
@@ -164,29 +137,6 @@
         }
     });
     
-    // Services owlCarousel
-    $('.services .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        mouseDrag: true,
-        autoplay: false,
-        dots: false,
-        autoplayHoverPause: true,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>","<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
     
     // Portfolio owlCarousel
     $('.portfolio .owl-carousel').owlCarousel({
@@ -509,16 +459,6 @@
     if ($('.js-cursor').length > 0) {
     const cursor = new Cursor()
     cursor.init();
-      
-  // Cursor Conditions
-    $('.services .owl-theme .item, .portfolio .owl-theme .item, .testimonials .item, .gallery-item .item').hover(function () {
-      $('.cursor').toggleClass('drag');
-    });
-      
-    // Cursor Class Settings
-    // $('a, ').hover(function () {
-    // $('.cursor').toggleClass('light');
-    // });
   }
 
     // Contact Form
